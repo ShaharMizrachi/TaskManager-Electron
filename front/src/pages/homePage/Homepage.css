@@ -1,0 +1,45 @@
+.homepageContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskCreation {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.taskCreation > input {
+  background-color: #f0f0f0;
+  color: #333333;
+  border: 1px solid #cccccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.taskCreation > button {
+  margin-left: 1%;
+}
+
+button {
+  background-color: #49627d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #374259;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-color: 1px solid #ccc;
+  justify-content: center;
+  display: flex;
+}

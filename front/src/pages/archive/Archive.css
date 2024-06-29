@@ -1,0 +1,117 @@
+.taskList {
+  padding: 20px;
+}
+
+.taskList h2 {
+  margin-bottom: 20px;
+}
+
+.taskList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.taskDescription {
+  flex: 1;
+  text-align: left;
+}
+
+.deleteButton {
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+
+/* Additional styles for the navigate button */
+.navigateButton {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #49627d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navigateButton:hover {
+  background-color: #3d526a;
+}
+
+.checkboxContiner {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 12%;
+}
+
+.checkboxContiner input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkboxContiner:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkboxContiner input:checked ~ .checkmark {
+  background-color: #49627d;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContiner input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
